@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import 'normalize.css';
 import '../styles/globals.scss';
 
 function MyApp({ Component, pageProps }) {

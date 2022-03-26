@@ -1,9 +1,18 @@
+@import "normalize.css/normalize.css";
+
+@use "variables.module";
+
 html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-family: $font-family;
+	font-size: $base;
+	font-weight: $font-weight-medium;
+	line-height: $line-height;
+	color: $black;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 a {
@@ -11,6 +20,18 @@ a {
 	text-decoration: none;
 }
 
-* {
-	box-sizing: border-box;
+li {
+	list-style: none;
+}
+
+//Page Scroll;
+::-webkit-scrollbar-track {
+	background-color: #f4f4f4;
+}
+::-webkit-scrollbar {
+	width: 6px;
+	background: #f4f4f4;
+}
+::-webkit-scrollbar-thumb {
+	background: #dad7d7;
 }
