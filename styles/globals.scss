@@ -1,17 +1,15 @@
-@import "normalize.css/normalize.css";
+@use 'variables.module';
+// @import 'fonts.scss'; //Adicionar ao término do projeto
 
-@use "variables.module";
-
-html,
-body {
+* {
 	padding: 0;
 	margin: 0;
-	font-family: $font-family;
-	font-size: $base;
-	font-weight: $font-weight-medium;
-	line-height: $line-height;
-	color: $black;
-	box-sizing: border-box;
+	font-family: variables.$font-family;
+	font-size: variables.$base;
+	font-weight: variables.$font-weight-medium;
+	line-height: variables.$line-height;
+	color: variables.$black;
+	outline: none;
 	scroll-behavior: smooth;
 }
 

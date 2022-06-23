@@ -5,7 +5,7 @@ import '../styles/globals.scss';
 
 function MyApp({ Component, pageProps }) {
 	return <Component {...pageProps} />;
-};
+}
 
 MyApp.propTypes = {
 	Component: PropTypes.oneOfType([PropTypes.func, PropTypes.object])
